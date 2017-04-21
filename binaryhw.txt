@@ -1,0 +1,78 @@
+Binary Exercises
+
+1. Without using a calculator:
+
+64 in base 10 -> base 2 (example)
+	100 base 10 = 1000000 base 2 
+
+100 in base 10 -> base 2,  1100100
+
+
+100 in base 10 -> base 5,  400
+
+
+1111111 in base 2 -> base 1,   7
+
+
+2. Describe the algorithm for adding two binary numbers
+
+Example:
+    1001    9
+   +0011   +3		1+1=0 carry 1, 1+0+1=0 carry the one, and so on.
+   -----   --
+   01100   12
+
+3. Describe the algorithm for multiplying two binary numbers
+
+Example:
+    1001    9           1001
+   x0011   x3	       x0011 is the same as multiplying in base 10. 1x1=1 and anything times 
+   -----   --		     0 is always zero. Then add them up at the bottom. 
+   11011   27
+
+4. Is there a trick for multiplying numbers by 2? Dividing numbers by 2?
+
+
+5. Write the truth tables for AND, OR, and NOT
+
+(example) AND:     AND             OR		  NOT
+    ^ | a b	a|b   ab   	a|b   ab	 a  a
+    -------	0 0    0 	0 0    0	 0  1	
+    1 | 1 1	0 1    0	0 1    1	 1  0
+    0 | 1 0	1 0    0	1 0    1
+    0 | 0 1	1 1    1	1 1    1
+    0 | 0 0	
+
+
+
+
+EXTRA CREDIT 1: Using just the operators described above, build a "half adder".
+A "half adder" takes in two inputs, A and B, and produces as output
+the "sum" of A and B, and a "carry" if one exists.
+
+
+Here is the truth table for the "half adder". + is the sum, and "C"
+is the carry.
+    + C | A B
+    ---------
+    0 0 | 0 0
+    1 0 | 0 1
+    1 0 | 1 0
+    1 1 | 1 1
+
+EXTRA CREDIT 2: Using just the operators described above, build a "full adder".
+A "full adder" takes in three inputs: A, B, and Cin (the carry in), and produces two
+outputs: the sum (S) and a carry out (Cout)
+
+Here is the truth table for the "full adder".
+
+A  B  Cin  | Cout S
+------------------
+0  0  0    |  0  0
+0  0  1    |  0  1
+0  1  0    |  0  1
+0  1  1    |  1  0
+1  0  0    |  0  1
+1  0  1    |  1  0
+1  1  0    |  1  0
+1  1  1    |  1  1
